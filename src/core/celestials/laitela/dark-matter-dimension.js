@@ -65,7 +65,8 @@ export class DarkMatterDimensionState extends DimensionState {
       SingularityMilestone.darkFromTheorems,
       SingularityMilestone.darkFromDM4,
       SingularityMilestone.darkFromGamespeed,
-      SingularityMilestone.darkFromDilatedTime
+      SingularityMilestone.darkFromDilatedTime,
+      Achievement(12)
     );
   }
 
@@ -95,7 +96,8 @@ export class DarkMatterDimensionState extends DimensionState {
       .timesEffectsOf(
         SingularityMilestone.darkEnergyMult,
         SingularityMilestone.realityDEMultiplier,
-        SingularityMilestone.multFromInfinitied
+        SingularityMilestone.multFromInfinitied,
+        Achievement(12)
       ).toNumber() * destabilizeBoost;
   }
 

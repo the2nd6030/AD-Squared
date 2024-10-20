@@ -1,4 +1,5 @@
 import { DC } from "./constants";
+import { V } from "./globals";
 
 // Slowdown parameters for replicanti growth, interval will increase by scaleFactor for every scaleLog10
 // OoM past the cap (default is 308.25 (log10 of 1.8e308), 1.2, Number.MAX_VALUE)
@@ -137,6 +138,7 @@ export function totalReplicantiSpeedMult(overCap) {
   if (Pelle.isDisabled("replicantiIntervalMult")) return totalMult;
 
   const preCelestialEffects = Effects.product(
+    Achievement(12),
     TimeStudy(62),
     TimeStudy(213),
     RealityUpgrade(2),

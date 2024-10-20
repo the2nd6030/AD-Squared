@@ -119,7 +119,7 @@ export function getDilationGainPerSecond() {
   if (Pelle.isDoomed) {
     const tachyonEffect = Currency.tachyonParticles.value.pow(PelleRifts.paradox.milestones[1].effectOrDefault(1));
     return new Decimal(tachyonEffect)
-      .timesEffectsOf(DilationUpgrade.dtGain, DilationUpgrade.dtGainPelle, DilationUpgrade.flatDilationMult)
+      .timesEffectsOf(DilationUpgrade.dtGain, DilationUpgrade.dtGainPelle, DilationUpgrade.flatDilationMult, Achievement(12))
       .times(ShopPurchase.dilatedTimePurchases.currentMult ** 0.5)
       .times(Pelle.specialGlyphEffect.dilation).div(1e5);
   }
@@ -133,6 +133,7 @@ export function getDilationGainPerSecond() {
       Ra.unlocks.continuousTTBoost.effects.dilatedTime,
       Ra.unlocks.peakGamespeedDT
     );
+  dtRate = dtRate.times(Achievement(12).effectOrDefault(1));
   dtRate = dtRate.times(getAdjustedGlyphEffect("dilationDT"));
   dtRate = dtRate.times(ShopPurchase.dilatedTimePurchases.currentMult);
   dtRate = dtRate.times(

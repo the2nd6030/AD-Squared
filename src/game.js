@@ -126,6 +126,7 @@ function totalEPMult() {
       .times(ShopPurchase.EPPurchases.currentMult)
       .timesEffectsOf(
         EternityUpgrade.epMult,
+        Achievement(12),
         TimeStudy(61),
         TimeStudy(122),
         TimeStudy(121),
@@ -275,6 +276,7 @@ export function gainedInfinities() {
   ).toDecimal();
 
   infGain = infGain.timesEffectsOf(
+    Achievement(12),
     TimeStudy(32),
     RealityUpgrade(5),
     RealityUpgrade(7),

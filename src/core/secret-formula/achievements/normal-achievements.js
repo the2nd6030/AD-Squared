@@ -6,30 +6,37 @@ export const normalAchievements = [
     name: "You gotta start somewhere",
     description: "Buy a 1st Antimatter Dimension.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
+    get reward() { return `Antimatter, Infinity, and Time Dimension multipliers are squared.` },
+    effect: 2
   },
   {
     id: 12,
     name: "100 antimatter is a lot",
     description: "Buy a 2nd Antimatter Dimension.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
+    get reward() { return `${formatX(100)} IP, Infinity, Eternity, EP, Replicanti, DT, TP, Reality, Perk Point, Memory Chunk, DM, DE, and Reality Shard gain.` },
+    effect: 100
   },
   {
     id: 13,
     name: "Half life 3 CONFIRMED",
     description: "Buy a 3rd Antimatter Dimension.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
+    get reward() { return `Tip: You don't need all 13 Achievement rows for the Reality study.` },
   },
   {
     id: 14,
     name: "L4D: Left 4 Dimensions",
     description: "Buy a 4th Antimatter Dimension.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
+    get reward() { return `Tip: You can easily reach Infinity with only 7 Dimensions.` },
   },
   {
     id: 15,
     name: "5 Dimension Antimatter Punch",
     description: "Buy a 5th Antimatter Dimension.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
+    get reward() { return `Tip: Getting r108/124 sucks, don't even bother with them.` },
   },
   {
     id: 16,
@@ -40,12 +47,14 @@ export const normalAchievements = [
         : "Buy a 6th Antimatter Dimension.";
     },
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
+    get reward() { return `I haven't really tested the mod, tell me if V's Reality breaks for some reason (it probably will)` },
   },
   {
     id: 17,
     name: "Not a luck related achievement",
     description: "Buy a 7th Antimatter Dimension.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
+    get reward() { return `EC11 is painfully slow. Fortunately, r12's bonuses make it way better!` },
   },
   {
     id: 18,
@@ -56,6 +65,7 @@ export const normalAchievements = [
         : "Buy an 8th Antimatter Dimension.";
     },
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
+    get reward() { return `I have no idea what to put here, I just want the entire first row to have the "bonus reward" star \uE010` },
   },
   {
     id: 21,

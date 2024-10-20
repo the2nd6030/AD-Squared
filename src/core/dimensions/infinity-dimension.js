@@ -155,7 +155,7 @@ class InfinityDimensionState extends DimensionState {
       mult = mult.times(PelleRifts.decay.milestones[0].effectOrDefault(1));
     }
 
-
+    mult = mult.pow(Achievement(11).effectOrDefault(1));
     mult = mult.pow(getAdjustedGlyphEffect("infinitypow"));
     mult = mult.pow(getAdjustedGlyphEffect("effarigdimensions"));
     mult = mult.pow(getAdjustedGlyphEffect("curseddimensions"));

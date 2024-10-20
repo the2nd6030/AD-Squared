@@ -162,7 +162,8 @@ function applyNDPowers(mult, tier) {
       InfinityUpgrade.thisInfinityTimeMult.chargedEffect,
       AlchemyResource.power,
       Achievement(183),
-      PelleRifts.paradox
+      PelleRifts.paradox,
+      Achievement(11)
     );
 
   multiplier = multiplier.pow(getAdjustedGlyphEffect("curseddimensions"));

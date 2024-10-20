@@ -219,6 +219,7 @@ class TimeDimensionState extends DimensionState {
     mult = mult.pow(Ra.momentumValue);
     mult = mult.pow(ImaginaryUpgrade(11).effectOrDefault(1));
     mult = mult.powEffectOf(PelleRifts.paradox);
+    mult = mult.pow(Achievement(11).effectOrDefault(1));
 
     if (player.dilation.active || PelleStrikes.dilation.hasStrike) {
       mult = dilatedValueOf(mult);
